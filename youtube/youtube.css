@@ -1,0 +1,120 @@
+*{   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #1e90ff;
+    --bgColor: #ffffff;
+  }
+
+body{
+    background-color: var(--bgColor);
+}
+
+#top-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px; 
+    padding: 0 16px;  
+}
+.nav-left, .nav-right, .nav-middle{
+    display: flex;
+    
+}
+
+#hamburguer-btn{
+    border: 0;
+    height: 0;
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+#hamburguer-icon{
+    padding: 8px;
+   
+}
+#hamburguer-icon:hover{
+    
+    border-radius: 50%;
+    background-color: rgba(156, 155, 155, 0.212);
+}
+.line{
+    margin-top: 5px;
+    width: 18px;
+    height: 1px;   
+    margin-bottom: 5px;
+    background-color: grey;
+}
+.line:last-child{ /*ou last-of-type, last-child resulta porque is de facto o ultimo element*/
+    margin-bottom: 0px;
+}
+.line:first-child{ /*ou last-of-type, last-child resulta porque is de facto o ultimo element*/
+    margin-top: 0px;
+}
+.logo-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 14px 18px 16px;
+}
+.logo-element  img{
+    height: 20px ;   
+
+}
+
+/*Top bar middle*/
+.nav-middle{
+    height: auto;
+}
+.search{
+    display: flex;
+    
+    justify-content: center;
+
+}
+#search-bar{
+    
+    flex-grow: 1;
+}
+#search-bar input{
+    height: 100%;
+    border: 1px solid hsl(0,0%,18.82%);
+    border-right: none;
+    border-radius: 40px 0 0 40px;   
+}
+#search-bar form{
+    height: 100%;
+}
+#submit{
+    width: 50px;
+    height: 100%;
+    border: 1px solid hsl(0,0%,18.82%);
+   border-left: none;
+    border-radius: 0px 40px 40px 0px   
+}
+
+/*Top bar right*/
+#top-menu-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bb{  
+   padding: 2px;
+   margin-left: auto;
+   margin-right: auto; 
+}
+
+.nav-right button, .nav-right img{
+    border-radius: 50%;
+    border-style: hidden;
+    background-color: rgb(255, 255, 255);
+   
+}
+.nav-right button:hover{
+    border-radius: 50%;
+    background-color: rgba(34, 21, 21, 0.212);
+}
