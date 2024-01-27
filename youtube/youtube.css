@@ -17,7 +17,8 @@ body{
     display: flex;
     justify-content: space-between;
     height: 50px; 
-    padding: 0 16px;  
+    padding: 0 16px;
+    margin-top: 20px;  
 }
 .nav-left, .nav-right, .nav-middle{
     display: flex;
@@ -68,6 +69,7 @@ body{
 /*Top bar middle*/
 .nav-middle{
     height: auto;
+    
 }
 .search{
     display: flex;
@@ -92,7 +94,7 @@ body{
     width: 50px;
     height: 100%;
     border: 1px solid hsl(0,0%,18.82%);
-   border-left: none;
+    border-left: none;
     border-radius: 0px 40px 40px 0px   
 }
 

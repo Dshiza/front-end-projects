@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    background-image: url(home.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.center{
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom: 200px;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 20px 10%;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.logo{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ededed;
+}
+.nav-link{    
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ededed;
+    margin-left: 35px;
+    transition: 0.3s ease;
+    
+}
+
+.nav-link:hover{
+    color: #00abf0;
+}
+.active{
+    color: #00abf0;
+}
+.home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10%;
+    max-width: 900px;
+   
+}
+h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(43, 153, 204);
+}
+p{
+    font-size: 16px;   
+    margin: 20px 0 40px;
+}
+.btn-box{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.btn-box a{
+    height: 100%;
+    width: 150px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #081b29;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+    
+}
+.btn-box a:nth-child(2):hover{
+   
+    color: #081b29;
+    
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+   transition: 0.5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+.contact {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 400px;
+    width: 100%;
+}
+.contact svg{
+    display: block;
+    color: #fff;
+    fill: #fff;
+    width: 40px;
+}
+.contact a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00abf0;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.contact a:first-child{
+    
+}
+/*
+header nav .nav-link {
+    display: inline-block;
+    
+}
+*/
+
+
+
+
