@@ -11,6 +11,7 @@ body{
     background-image: url(home.jpg);
     background-size: cover;
     color: #fff;
+    
 }
 .center{
     margin-left:100px;
@@ -136,7 +137,7 @@ p{
 .contact {
     display: flex;
     
-    height: 400px;
+    height: 200px;
     width: 50%; /*VER ISTO TAVA A 100%!!!!!!!!!!!!!!!!!!!!!*/
 
 }
